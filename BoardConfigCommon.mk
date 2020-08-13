@@ -66,6 +66,7 @@ TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
 
 # Fingerprint
 TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
+TARGET_USES_FOD_ZPOS := true
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(COMMON_PATH)/device_framework_matrix.xml
