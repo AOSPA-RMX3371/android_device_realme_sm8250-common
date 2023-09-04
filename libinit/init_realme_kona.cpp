@@ -72,6 +72,14 @@ static const variant_info_t RMX3370_IN_info = {
     .name = "RMX3370",
 };
 
+static const variant_info_t RMX3371_IN_info = {
+    .prjversion_value = "21732",
+
+    .device = "RE54E4L1",
+    .model = "RMX3371",
+    .name = "RMX3371",
+};
+
 static const std::vector<variant_info_t> variants = {
     RMX2071_CN_info,
     RMX2072_CN_info,
@@ -81,6 +89,7 @@ static const std::vector<variant_info_t> variants = {
     RMX3370_CNLZ_info,
     RMX3370_GLOBAL_info,
     RMX3370_IN_info,
+    RMX3371_IN_info,
 };
 
 void vendor_load_properties() {
