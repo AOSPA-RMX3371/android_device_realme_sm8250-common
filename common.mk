@@ -26,10 +26,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Inherit proprietary libraries
 $(call inherit-product, vendor/realme/sm8250-common/sm8250-common-vendor.mk)
 
-# ANT
-PRODUCT_PACKAGES += \
-    com.dsi.ant@1.0.vendor
-
 # Audio
 ifeq ($(TARGET_USES_BLUETOOTH_LE_AUDIO), true)
 PRODUCT_COPY_FILES += \
@@ -101,11 +97,6 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
 
-# IPACM
-PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml
-
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -122,18 +113,13 @@ PRODUCT_PACKAGES += \
 # Media
 GENERIC_ODM_IMAGE := true
 
-# Net
-PRODUCT_PACKAGES += \
-    netutils-wrapper-1.0
-
 # Neural networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc_snxxx@1.2-service \
-    android.hardware.secure_element@1.2.vendor
+    android.hardware.nfc_snxxx@1.2-service
 
 PRODUCT_PACKAGES += \
     NfcNci \
@@ -163,19 +149,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service \
-    android.hardware.power@1.2.vendor \
-    vendor.qti.hardware.perf@2.2.vendor
-
-# QMI
-PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor \
-    libvndfwk_detect_jni.qti \
-    libvndfwk_detect_jni.qti.vendor
-
 # QTI
 TARGET_BOARD_PLATFORM := kona
 
@@ -198,12 +171,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     vibrator \
     wfd \
     wlan
-
-# RIL
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full \
-    librmnetctl \
-    libxml2
 
 # Sensors
 PRODUCT_PACKAGES += \
