@@ -63,9 +63,6 @@ TARGET_BOOTLOADER_BOARD_NAME := kona
 # Display
 TARGET_SCREEN_DENSITY := 450
 
-# Filesystem
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
-
 # Fingerprint
 TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
 
