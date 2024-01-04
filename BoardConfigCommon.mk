@@ -62,6 +62,7 @@ TARGET_BOOTLOADER_BOARD_NAME := kona
 
 # Display
 TARGET_SCREEN_DENSITY := 450
+TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
 
 # Fingerprint
 TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
